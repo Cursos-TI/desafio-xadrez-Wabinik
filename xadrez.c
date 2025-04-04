@@ -35,7 +35,9 @@ int main() {
 //Peças
 int rainha, torre, bispo;
 //Casas
-int casabispo, casarainha, casatorre;
+int casabispo, colunabispo, casarainha, casatorre;
+char letrabispo;
+letrabispo = 'D';
 //Decisão
 int resposta;
 
@@ -58,7 +60,15 @@ case 1:
 
     for (casabispo = 2; casabispo <= 6; casabispo ++)
     {
-        printf("\nO bispo subiu uma coluna e foi para a linha %i", casabispo);
+
+        /*for (colunabispo = 1; colunabispo <= 1; colunabispo ++)
+        {
+            printf("\nO bispo foi para a coluna %c", letrabispo);
+            ++letrabispo;
+        }*/
+        
+        printf("O bispo foi para a coluna %c, linha %i\n", letrabispo, casabispo);
+        ++letrabispo;
     }
     printf("\n\nO bispo agora está na casa H6!\n\n");
     
@@ -88,6 +98,27 @@ case 3:
    }
    printf("\n\nA torre agora está na casa H4!\n\n");
 
+    break;
+
+case 4:
+    printf("\n\nMOVIMENTAÇÃO DO CAVALO\n\n");
+    printf("O cavalo se movimenta em /L/, sendo duas casas\npara cima e uma para o lado, podendo\nser para a direita ou esquerda\n\nEx.:");
+    printf("Um bispo está na casa C1 e será movido 5 vezes\nna diagonal, até a casa H6.\n\n");
+
+    for (casabispo = 2; casabispo <= 6; casabispo ++)
+    {
+
+        /*for (colunabispo = 1; colunabispo <= 1; colunabispo ++)
+        {
+            printf("\nO bispo foi para a coluna %c", letrabispo);
+            ++letrabispo;
+        }*/
+        
+        printf("O bispo foi para a coluna %c, linha %i\n", letrabispo, casabispo);
+        ++letrabispo;
+    }
+    printf("\n\nO bispo agora está na casa H6!\n\n");
+    
     break;
 
 default:
